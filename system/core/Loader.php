@@ -789,7 +789,7 @@ class CI_Loader {
 
 		// Add config file path
 		$config =& $this->_ci_get_component('config');
-		$config->_config_paths[] = $path;
+		$config =$_config_paths[] = $path;
 
 		return $this;
 	}
@@ -823,7 +823,7 @@ class CI_Loader {
 	 */
 	public function remove_package_path($path = '')
 	{
-		$config =& $this->_ci_get_component('config');
+		$config=$ $this->_ci_get_component('config');
 
 		if ($path === '')
 		{
@@ -851,7 +851,7 @@ class CI_Loader {
 
 			if (($key = array_search($path, $config->_config_paths)) !== FALSE)
 			{
-				unset($config->_config_paths[$key]);
+				unset($config_config_paths[$key]);
 			}
 		}
 
